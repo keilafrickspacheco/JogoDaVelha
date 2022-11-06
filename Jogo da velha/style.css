@@ -1,0 +1,206 @@
+body {
+    background: rgb(70, 142, 236);
+    font: normal 15pt Arial;
+    font-weight: bold;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 850px;
+    height: 650px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
+    background: url("img/jogo.jpg") no-repeat;
+    background-size: 100% 100%;
+    color: darkblue;
+    text-transform: uppercase;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+.icon {
+    width: 40px;
+    background-image: none;
+}
+
+.icon:hover {
+    width: 220px;
+    background-image: none
+}
+
+#total {
+    width: 100%;
+    height: 100%;
+}
+
+#X,
+#O {
+    display: block;
+    padding-right: 15px;
+}
+
+#X:active,
+#O:active {
+    font-size: 200px !important;
+    color: pink;
+    background-color: #000;
+}
+
+#X:hover,
+#O:hover {
+    font-size: 190px !important;
+    color: pink;
+}
+
+#res {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+#sinal {
+    color: purple;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+#res1,
+#res2,
+#res3,
+#res4,
+#res5,
+#res6,
+#res7,
+#res8,
+#res9 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+}
+
+#res2,
+#res3 {
+    border-left: 3px solid #000;
+}
+
+#res5,
+#res6 {
+    border-left: 3px solid #000;
+}
+
+#res8,
+#res9 {
+    border-left: 3px solid #000;
+}
+
+#res1,
+#res2,
+#res3 {
+    border-bottom: 3px solid#000;
+}
+
+#res4,
+#res5,
+#res6 {
+    border-bottom: 3px solid#000;
+}
+
+#jogar1,
+#jogar2,
+#jogar3,
+#jogar4,
+#jogar5,
+#jogar6,
+#jogar7,
+#jogar8,
+#jogar9 {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+}
+
+#reiniciar {
+    color: purple;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    position: relative;
+}
+
+.jogar:hover {
+    cursor: pointer;
+    background-color: darkblue !important;
+    color: black;
+    transform: rotate(50deg);
+    color: blue;
+}
+
+#reiniciar:hover {
+    cursor: pointer;
+    background-color: darkblue;
+    color: black;
+    transition: all 2s;
+    transform: rotate(50deg);
+    color: white;
+    font-size: 30px;
+    border-radius: 100%;
+    width: 400px;
+}
+
+.jogar:active {
+    background-color: pink;
+}
+
+#reiniciar:active {
+    background-color: pink;
+    color: black;
+    transform: rotate(50deg);
+    color: blue;
+}
+
+.espacoI {
+    visibility: visible;
+}
+
+.espacoA {
+    visibility: hidden;
+}
+
+.escolhas {
+    display: flex;
+    flex-direction: column;
+}
+
+.sinalescolhido,
+.ganhador {
+    color: black;
+    text-transform: initial;
+}
+
+.xganhou:hover {
+    color: blueviolet;
+    transition: all 5s;
+    transform: rotate(0.5turn);
+    font-size: 500px !important;
+    background: rgb(70, 142, 236);
+    border: none;
+    outline: none;
+}

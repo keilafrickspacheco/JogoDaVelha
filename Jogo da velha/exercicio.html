@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Jogo da velha.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/6.png">
+</head>
+
+<body>
+
+    <div id="total">
+        <header>
+            <h1>Jogo da velha</h1>
+            <button class="xganhou"></button>
+        </header>
+
+        <section>
+            <img src="img/1.gif" class="icon">
+            Escolha o seu sínal para o jogo!
+            <div id="sinal">
+                <label>
+                    <input class="jogar escolherX" type="radio" value="X" name="sinal" id="X"></input>
+                    <span id="X">X</span>
+                </label>
+
+                <label>
+                    <input class="jogar escolherO" type="radio" value="O" name="sinal" id="O"></input>
+                    <span id="O">O</span>
+                </label>
+            </div>
+
+            <div class="escolhas">
+                <label class="sinalescolhido">Última jogada:</label>
+                <label class="ganhador">Ganhador:</label>
+            </div>
+
+            <div id="campo" class="espacoI espacoA">
+                <div id="res">
+
+                    <div id="res1">
+                        <input class="jogar" id="jogar1" type="button" onclick="jogada1()">
+                    </div>
+
+                    <div id="res2">
+                        <input class="jogar" id="jogar2" type="button" onclick="jogada2()">
+                    </div>
+
+                    <div id="res3">
+                        <input class="jogar" id="jogar3" type="button" onclick="jogada3()">
+                    </div>
+
+                </div>
+
+                <div id="res">
+
+                    <div id="res4">
+                        <input class="jogar" id="jogar4" type="button" onclick="jogada4()">
+                    </div>
+
+                    <div id="res5">
+                        <input class="jogar" id="jogar5" type="button" onclick="jogada5()">
+                    </div>
+
+                    <div id="res6">
+                        <input class="jogar" id="jogar6" type="button" onclick="jogada6()">
+                    </div>
+
+                </div>
+
+                <div id="res">
+                    <div id="res7">
+                        <input class="jogar" id="jogar7" type="button" onclick="jogada7()">
+                    </div>
+
+                    <div id="res8">
+                        <input class="jogar" id="jogar8" type="button" onclick="jogada8()">
+                    </div>
+
+                    <div id="res9">
+                        <input class="jogar" id="jogar9" type="button" onclick="jogada9()">
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <input id="reiniciar" type="button" value="Reiniciar o Jogo" onclick="reiniciar()">
+            </div>
+
+        </section>
+
+        <footer>
+            <p>&copy;Curso em vídeo</p>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html
