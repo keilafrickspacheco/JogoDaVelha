@@ -194,13 +194,3 @@ footer {
     color: black;
     text-transform: initial;
 }
-
-.xganhou:hover {
-    color: blueviolet;
-    transition: all 5s;
-    transform: rotate(0.5turn);
-    font-size: 500px !important;
-    background: rgb(70, 142, 236);
-    border: none;
-    outline: none;
-}
