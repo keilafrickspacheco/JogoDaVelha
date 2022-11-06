@@ -391,7 +391,7 @@ function verGanhador() {
     if (g === false) {
         quemganhou.innerHTML = `Sem ganhador`
     }
-    if (j1 === true && j2 === true && j3 === true && j4 === true && j5 === true && j6 === true && j7 === true && j8 === true && j9 === true) {
+    if (g === false && j1 === true && j2 === true && j3 === true && j4 === true && j5 === true && j6 === true && j7 === true && j8 === true && j9 === true) {
         quemganhou.innerHTML = `Ninguém ganhou, deu empate. Reinicie o Jogo.`
     }
     return
