@@ -32,11 +32,15 @@ let sinalescolhido = window.document.querySelector('.sinalescolhido')
 escolhaSinalO.addEventListener('click', () => {
     campoVelha.classList.toggle('espacoA')
     window.document.querySelector('section').style.background = 'white'
+
+    window.document.querySelector('section').style.transition = 'all 2s linear'
 })
 
 escolhaSinalX.addEventListener('click', () => {
     campoVelha.classList.toggle('espacoA')
     window.document.querySelector('section').style.background = 'white'
+
+    window.document.querySelector('section').style.transition = 'all 2s linear'
 })
 
 function jogada1() {
@@ -408,12 +412,14 @@ function findJogo() {
     img.setAttribute('id', 'foto')
     img.setAttribute('src', 'img/fogos.gif')
     img.style.position = 'absolute'
+
     document.querySelector('body').style.background = 'url(img/fogos.gif)'
     document.body.style.backgroundColor = 'rgb(70, 142, 236)';
 
     var img2 = window.document.createElement('img2')
     img2.setAttribute('id', 'jogo')
     img2.setAttribute('src', 'img/jogo.jpg')
+
     document.querySelector('section').style.background = 'url(img/jogo.jpg)'
 
     const music = new Audio('som/som.mp3');
@@ -421,6 +427,7 @@ function findJogo() {
     res.appendChild(img, img2)
 
     var rodar = document.getElementById('campo')
+    rodar.style.transition = 'all 3s linear'
     rodar.style.transform = 'rotate(50deg)'
 }
 

@@ -14,7 +14,7 @@ section {
     border-radius: 10px;
     padding: 15px;
     width: 850px;
-    height: 650px;
+    height: 700px;
     margin: auto;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.363);
     background: url("img/jogo.jpg") no-repeat;
@@ -32,6 +32,7 @@ footer {
 .icon {
     width: 40px;
     background-image: none;
+    transition: all 1s linear;
 }
 
 .icon:hover {
@@ -48,6 +49,7 @@ footer {
 #O {
     display: block;
     padding-right: 15px;
+    transition: all 1s linear;
 }
 
 #X:active,
@@ -135,6 +137,7 @@ footer {
     background-color: transparent;
     width: 100px;
     height: 100px;
+    transition: all 1s linear;
 }
 
 #reiniciar {
@@ -143,6 +146,7 @@ footer {
     font-size: 20px;
     border: none;
     position: relative;
+    transition: all 2s linear;
 }
 
 .jogar:hover {
@@ -157,7 +161,6 @@ footer {
     cursor: pointer;
     background-color: darkblue;
     color: black;
-    transition: all 2s;
     transform: rotate(50deg);
     color: white;
     font-size: 30px;
@@ -178,10 +181,12 @@ footer {
 
 .espacoI {
     visibility: visible;
+    transition: all 1s linear
 }
 
 .espacoA {
     visibility: hidden;
+    transition: all 1s linear
 }
 
 .escolhas {
